@@ -127,20 +127,20 @@ app.post("/betting_settle", jsonParser, function (req, res) {
   res.send(true);
 });
 
- var my_connection = mysql.createConnection({
-   host: "localhost:80",
-   user: "root",
-   password: "jattjatt",
-   database: "woo",
-});
-
-//var my_connection = mysql.createConnection({
- // host: "aa1iy1ahiodfc39.cmw0okqfgiyl.eu-west-2.rds.amazonaws.com",
-//  user: "surendradotar",
-  //password: "Surendra$22455",
-  //tabase: "exchange",
-  //timezone: "utc",
+// var my_connection = mysql.createConnection({
+  // host: "localhost:80",
+   //user: "root",
+   //password: "jattjatt",
+  // database: "woo",
 //});
+
+var my_connection = mysql.createConnection({
+ host: "localhost",
+  user: "gold1",
+  password: "jattjatt1Q@",
+  database: "gold",
+  timezone: "utc",
+});
 //res.locals.connection.connect();
 
 const query = util.promisify(my_connection.query).bind(my_connection);
